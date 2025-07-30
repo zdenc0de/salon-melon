@@ -1,0 +1,44 @@
+/* css.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.hero {
+  background-color: #000000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff9242;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff7a1a;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #222;
+}
