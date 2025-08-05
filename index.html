@@ -4,16 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salón Melón | El corazón de tus eventos</title>
-  <link rel="stylesheet" href="css.css" />
+  <meta name="description" content="Salón de eventos especializado en fiestas infantiles, bodas, baby showers y graduaciones. El lugar perfecto para celebrar tus momentos más especiales.">
+  <meta name="keywords" content="salón de eventos, fiestas infantiles, bodas, baby showers, graduaciones, eventos corporativos">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.css" />
 </head>
 <body>
+<!-- Navegación -->
+<nav class="main-nav">
+  <button class="hamburger" aria-label="Abrir menú">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#sobre">Quiénes Somos</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a href="https://wa.me/527207562945?text=¡Hola!%20Quiero%20informes%20sobre%20Salón%20Melón." target="_blank" rel="noopener noreferrer">Contacto</a></li>
+  </ul>
+</nav>
+
   <!-- Hero Section -->
   <header class="hero">
-    <img src="images/logo.jpg" alt="Salón Melón Logo" class="logo" />
+    <img src="images/logo.jpg" alt="Salón Melón Logo" class="logo" loading="lazy">
     <h1>El corazón de tus eventos</h1>
-    <a href="https://wa.me/52720756?text=¡Hola!%20Quiero%20informes%20sobre%20Salón%20Melón." target="_blank" class="cta-button">Agenda tu evento</a>
+    <a href="https://wa.me/527207562945?text=¡Hola!%20Quiero%20informes%20sobre%20Salón%20Melón." target="_blank" rel="noopener noreferrer" class="cta-button">Agenda tu evento</a>
   </header>
 
   <!-- Imagen Intro -->
@@ -22,71 +40,153 @@
       <h2>Bienvenido a Salón Melón</h2>
       <p>Un espacio único para celebrar tus mejores momentos</p>
     </div>
-    <img src="images/i13.jpg" alt="Imagen de introducción" class="imagen-responsiva">
+    <img src="images/i13.jpg" alt="Salón elegantemente decorado para eventos especiales" class="imagen-responsiva" loading="lazy">
   </section>
 
   <!-- Video del salón -->
   <section class="video">
     <h2>Conócenos</h2>
     <div class="video-container">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/aCoc2ilN8ds?si=xc2Ld_EBdSTkAlEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/aCoc2ilN8ds" title="Tour virtual Salón Melón" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy"></iframe>
     </div>
   </section>
 
-  <!-- Sobre el salón -->
+  <!-- Sobre el salón mejorado -->
   <section class="sobre" id="sobre">
-    <h2>¿Quiénes somos?</h2>
-    <p>Salón Melón es el lugar perfecto para celebrar tus momentos más especiales: desde cumpleaños y bodas hasta eventos corporativos.</p>
+    <div class="sobre-card">
+      <div class="sobre-content">
+        <h2>¿Quiénes somos?</h2>
+        <p>Salón Melón es el lugar perfecto para celebrar tus momentos más especiales. Con años de experiencia en la organización de eventos, nos especializamos en crear experiencias únicas e inolvidables para nuestros clientes. Desde cumpleaños y bodas hasta eventos corporativos, nos comprometemos a hacer de tu celebración un momento perfecto que recordarás para siempre.</p>
+      </div>
+      <div class="sobre-image">
+        <img src="images/i1.jpg" alt="Interior del Salón Melón preparado para evento" loading="lazy">
+      </div>
+    </div>
   </section>
 
-  <!-- Carrusel de Galería -->
+  <!-- Galería mejorada con Slider -->
   <section class="galeria" id="galeria">
     <h2>Galería</h2>
-    <div class="carrusel">
-      <div class="slide"><img src="images/i1.jpg" alt="Imagen 1"></div>
-      <div class="slide"><img src="images/i2.jpg" alt="Imagen 2"></div>
-      <div class="slide"><img src="images/i3.jpg" alt="Imagen 3"></div>
-      <div class="slide"><img src="images/i4.jpg" alt="Imagen 4"></div>
-      <div class="slide"><img src="images/i5.jpg" alt="Imagen 5"></div>
-      <div class="slide"><img src="images/i6.jpg" alt="Imagen 6"></div>
-      <div class="slide"><img src="images/i7.jpg" alt="Imagen 7"></div>
-      <div class="slide"><img src="images/i8.jpg" alt="Imagen 8"></div>
-      <div class="slide"><img src="images/i9.jpg" alt="Imagen 9"></div>
-      <div class="slide"><img src="images/i10.jpg" alt="Imagen 10"></div>
-      <div class="slide"><img src="images/i11.jpg" alt="Imagen 11"></div>
-      <div class="slide"><img src="images/i12.jpg" alt="Imagen 12"></div>
-      <div class="slide"><img src="images/i14.jpg" alt="Imagen 14"></div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/i1.jpg" alt="Salón principal con decoración elegante para bodas" loading="lazy">
+        </div>
+        <!-- Repite .slide según el array de imágenes -->
+        <div class="slide">
+          <img src="images/i2.jpg" alt="Mesa de dulces temática para fiestas infantiles" loading="lazy">
+        </div>
+        <!-- ...hasta i14.jpg -->
+        <div class="slide">
+          <img src="images/i3.jpg" alt="Decoración de mesa para baby shower" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i4.jpg" alt="Salón decorado para graduación" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i5.jpg" alt="Fiesta infantil con globos y decoración colorida" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i6.jpg" alt="Boda elegante con decoración floral" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i7.jpg" alt="Baby shower con decoración temática" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i8.jpg" alt="Graduación con decoración festiva" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i9.jpg" alt="Fiesta infantil con juegos y actividades" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i10.jpg" alt="Boda con decoración romántica" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i11.jpg" alt="Baby shower con decoración alegre" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i12.jpg" alt="Graduación con decoración elegante" loading="lazy">
+        </div>
+        <div class="slide">
+          <img src="images/i13.jpg" alt="Fiesta infantil con temática de superhéroes" loading="lazy">
+        </div>
+      </div>
+
+      <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
+      <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+
+      <div class="slider-indicators">
+        <!-- Un <span> indicador por cada slide -->
+        <span class="indicator active" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+        <span class="indicator" onclick="currentSlide(4)"></span>
+        <span class="indicator" onclick="currentSlide(5)"></span>
+        <span class="indicator" onclick="currentSlide(6)"></span>
+        <span class="indicator" onclick="currentSlide(7)"></span>
+        <span class="indicator" onclick="currentSlide(8)"></span>
+        <span class="indicator" onclick="currentSlide(9)"></span>
+        <span class="indicator" onclick="currentSlide(10)"></span>
+        <span class="indicator" onclick="currentSlide(11)"></span>
+        <span class="indicator" onclick="currentSlide(12)"></span>
+        <span class="indicator" onclick="currentSlide(13)"></span>
+        <!-- ...hasta 13 -->
+      </div>
     </div>
   </section>
 
-  <!-- Servicios -->
+  <!-- Modal Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">×</button>
+      <img id="lightbox-img" src="" alt="">
+      <button class="lightbox-nav lightbox-prev" onclick="lightboxSlide(-1)">❮</button>
+      <button class="lightbox-nav lightbox-next" onclick="lightboxSlide(1)">❯</button>
+    </div>
+  </div>
+
+  <!-- Servicios mejorados -->
   <section class="servicios" id="servicios">
     <h2>Servicios</h2>
-    <ul>
-      <li>Fiestas Infantiles</li>
-      <li>Bodas</li>
-      <li>Baby Showers</li>
-      <li>Graduaciones</li>
-    </ul>
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <div class="servicio-icon">🎈</div>
+        <h3>Fiestas Infantiles</h3>
+        <p>Celebraciones mágicas con decoración temática, animadores y todo lo necesario para hacer felices a los más pequeños.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon">💒</div>
+        <h3>Bodas</h3>
+        <p>El día más especial de tu vida merece un lugar único. Organizamos bodas elegantes con todos los detalles cuidados.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon">👶</div>
+        <h3>Baby Showers</h3>
+        <p>Celebra la llegada del nuevo integrante de la familia en un ambiente cálido y lleno de amor y alegría.</p>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-icon">🎓</div>
+        <h3>Graduaciones</h3>
+        <p>Conmemora este logro tan importante con una celebración que honre el esfuerzo y dedicación del graduado.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Ubicación -->
   <section class="ubicacion" id="ubicacion">
     <h2>¿Dónde estamos?</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3472.5354518824765!2d-99.67532642479034!3d19.24675698199325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE0JzQ4LjMiTiA5OcKwNDAnMjEuOSJX!5e1!3m2!1ses-419!2smx!4v1753913822820!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3472.5354518824765!2d-99.67532642479034!3d19.24675698199325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE0JzQ4LjMiTiA5OcKwNDAnMjEuOSJX!5e1!3m2!1ses-419!2smx!4v1753913822820!5m2!1ses-419!2smx" loading="lazy"></iframe>
   </section>
 
   <footer>
     <p>© 2025 Salón Melón | Todos los derechos reservados</p>
   </footer>
 
-  <script src="app.js"></script>
-
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/52720756?text=¡Hola!%20Quiero%20informes%20sobre%20Salón%20Melón." 
-    class="whatsapp" target="_blank">
+  <a href="https://wa.me/527207562945?text=¡Hola!%20Quiero%20informes%20sobre%20Salón%20Melón." class="whatsapp" target="_blank" rel="noopener noreferrer">
     <img src="images/whatsapp-icon.png" alt="Chat por WhatsApp">
   </a>
+
+  <script src="app.js"></script>
 </body>
 </html>
-
